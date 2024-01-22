@@ -1,0 +1,63 @@
+
+.contenido{
+    display: grid;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+article {
+    
+    border-radius: 0.6rem;
+    width: fit-content;
+    padding: 1.8rem;
+
+    .personal {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        figure {
+            margin-right: 1.8rem;
+            img {
+                border-radius: 50%;
+            }
+        }
+        div {
+            p {
+                color: hsl(210, 46%, 95%);
+            }
+        }
+
+    }
+    .info {
+        
+        h2 {
+            margin-bottom: 1.3rem;
+        }
+        
+    }
+}
+
+.primero, .segundo, .cuarto {
+    .personal {
+        div {
+            h4 {
+                color: hsl(0, 0%, 100%);
+            }
+        }
+    }
+
+    .info {
+        h2 {
+           color:  hsl(0, 0%, 100%);
+        }
+
+        p {
+            color: hsl(0, 0%, 81%);
+        }
+    }
+}
+
+
+
+

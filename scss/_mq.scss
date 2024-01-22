@@ -1,0 +1,68 @@
+
+.primero {
+    grid-area: primero;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.segundo {
+    grid-area: segundo;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.tercero {
+    grid-area: tercero;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.cuarto {
+    grid-area: cuarto;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.quinto {
+    
+    grid-area: quinto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1000px)  {
+    .contenedor {
+        padding: 7rem;
+    }
+
+   
+
+    .contenido {
+        
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "primero primero segundo quinto"
+        "tercero cuarto cuarto quinto";
+    }
+
+}
+    
+
+
+@media (max-width: 1000px) {
+    .contenedor {
+        padding: 1.8rem;
+
+    }
+
+    .contenido {
+        
+        
+        margin: 0 auto;
+        margin-block: 2.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "primero"
+        "segundo"
+        "tercero"
+        "cuarto"
+        "quinto";
+    }
+}
+   

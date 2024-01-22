@@ -1,0 +1,108 @@
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  margin: 0 auto;
+  background-color: hsl(210, 46%, 95%);
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+.primero {
+  grid-area: primero;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.segundo {
+  grid-area: segundo;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.tercero {
+  grid-area: tercero;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.cuarto {
+  grid-area: cuarto;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.quinto {
+  grid-area: quinto;
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1000px) {
+  .contenedor {
+    padding: 7rem;
+  }
+  .contenido {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "primero primero segundo quinto" "tercero cuarto cuarto quinto";
+  }
+}
+@media (max-width: 1000px) {
+  .contenedor {
+    padding: 1.8rem;
+  }
+  .contenido {
+    margin: 0 auto;
+    margin-block: 2.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "primero" "segundo" "tercero" "cuarto" "quinto";
+  }
+}
+.contenido {
+  display: grid;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+article {
+  border-radius: 0.6rem;
+  width: fit-content;
+  padding: 1.8rem;
+}
+article .personal {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+article .personal figure {
+  margin-right: 1.8rem;
+}
+article .personal figure img {
+  border-radius: 50%;
+}
+article .personal div p {
+  color: hsl(210, 46%, 95%);
+}
+article .info h2 {
+  margin-bottom: 1.3rem;
+}
+
+.primero .personal div h4, .segundo .personal div h4, .cuarto .personal div h4 {
+  color: hsl(0, 0%, 100%);
+}
+.primero .info h2, .segundo .info h2, .cuarto .info h2 {
+  color: hsl(0, 0%, 100%);
+}
+.primero .info p, .segundo .info p, .cuarto .info p {
+  color: hsl(0, 0%, 81%);
+}
+
+/*# sourceMappingURL=styles.css.map */
